@@ -1,194 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Table Styling | W9 - Tables &amp; Forms</title>
-  <link rel="stylesheet" href="./css/base.css">
-  <link rel="stylesheet" href="./css/table-styling.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,400;1,800&display=swap" rel="stylesheet">
-</head>
-<body>
-
-  <header class="masthead no-print" role="banner">
-    <div class="container">
-      <a href="/" class="logo">
-        <strong>W9 - Tables &amp; Forms</strong>
-      </a>
-      <nav id="nav" role="navigation">
-        <ul>
-          <li><a href="./table-basics.html">Table Basics</a></li>
-          <li><a aria-current="page" href="./table-styling.html">Table Styling</a></li>
-          <li><a href="./form-basics.html">Form Basics</a></li>
-          <li><a href="./form-styling-complete.html">Form Complete</a></li>
-        </ul>
-      </nav>
-      <a class="nav-toggle" href="#nav" aria-label="Click to open mobile nav">
-        <span class="tog top"></span>
-        <span class="tog middle"></span>
-        <span class="tog bottom"></span>
-      </a>
-    </div>
-  </header>
-
-  <main id="main" role="main">
-
-    <section>
-      
-      <div class="container container-side-padding">
-        <h1>Table Styling</h1>
-
-        <!-- ---------- TUTORIAL CONTENT ---------- -->
-
-        <h2 class="padding-t">Calendar</h2>
-        <table class="calendar">
-          <caption>November</caption>
-          <thead>
-            <tr>
-              <th scope="col">Sunday</th>
-              <th scope="col">Monday</th>
-              <th scope="col">Tuesday</th>
-              <th scope="col">Wednesday</th>
-              <th scope="col">Thursday</th>
-              <th scope="col">Friday</th>
-              <th scope="col">Saturday</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <time datetime="2020-11-01">1</time>
-                <p class="cal-item event icon">Daylight Savings</p>
-              </td>
-              <td>
-                <time datetime="2020-11-02">2</time>
-                <p class="cal-item class"><time datetime="2020-11-02T17:00:00">5:00pm</time>: MAD9013</p>
-              </td>
-              <td>
-                <time datetime="2020-11-03">3</time>
-                <p class="cal-item event">US Election</p>
-              </td>
-              <td>
-                <time datetime="2020-11-04">4</time>
-                <p class="cal-item class"><time datetime="2020-11-04T08:00:00">8:00am</time>: MAD9011</p>
-              </td>
-              <td>
-                <time datetime="2020-11-05">5</time>
-                <p class="cal-item appointment"><time datetime="2020-11-05T08:00:00">8:00am</time>: Doctor's appointment</p>
-              </td>
-              <td>
-                <time datetime="2020-11-06">6</time>
-                <p class="cal-item class"><time datetime="2020-11-06T16:00:00">4:00pm</time>: MAD9013</p>
-              </td>
-              <td>
-                <time datetime="2020-11-07">7</time>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <time datetime="2020-11-08">8</time>
-              </td>
-              <td>
-                <time datetime="2020-11-09">9</time>
-                <p class="cal-item class"><time datetime="2020-11-09T17:00:00">5:00pm</time>: MAD9013</p>
-              </td>
-              <td>
-                <time datetime="2020-11-10">10</time>
-              </td>
-              <td>
-                <time datetime="2020-11-11">11</time>
-                <p class="cal-item holiday">Remembrance Day</p>
-                <p class="cal-item class"><time datetime="2020-11-11T08:00:00">8:00am</time>: MAD9011</p>
-              </td>
-              <td>
-                <time datetime="2020-11-12">12</time>
-              </td>
-              <td>
-                <time datetime="2020-11-13">13</time>
-                <p class="cal-item class"><time datetime="2020-11-13T16:00:00">4:00pm</time>: MAD9013</p>
-              </td>
-              <td>
-                <time datetime="2020-11-14">14</time>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <time datetime="2020-11-15">15</time>
-              </td>
-              <td>
-                <time datetime="2020-11-16">16</time>
-                <p class="cal-item class"><time datetime="2020-11-16T17:00:00">5:00pm</time>: MAD9013</p>
-              </td>
-              <td>
-                <time datetime="2020-11-17">17</time>
-                <p class="cal-item event">Jesse's Birthday</p>
-              </td>
-              <td>
-                <time datetime="2020-11-18">18</time>
-                <p class="cal-item class"><time datetime="2020-11-18T08:00:00">8:00am</time>: MAD9011</p>
-              </td>
-              <td>
-                <time datetime="2020-11-19">19</time>
-              </td>
-              <td>
-                <time datetime="2020-11-20">20</time>
-                <p class="cal-item class"><time datetime="2020-11-20T16:00:00">4:00pm</time>: MAD9013</p>
-              </td>
-              <td>
-                <time datetime="2020-11-21">21</time>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <time datetime="2020-11-22">22</time>
-              </td>
-              <td>
-                <time datetime="2020-11-23">23</time>
-                <p class="cal-item class"><time datetime="2020-11-23T17:00:00">5:00pm</time>: MAD9013</p>
-              </td>
-              <td>
-                <time datetime="2020-11-24">24</time>
-              </td>
-              <td>
-                <time datetime="2020-11-25">25</time>
-                <p class="cal-item class"><time datetime="2020-11-25T08:00:00">8:00am</time>: MAD9011</p>
-              </td>
-              <td>
-                <time datetime="2020-11-26">26</time>
-              </td>
-              <td>
-                <time datetime="2020-11-27">27</time>
-                <p class="cal-item class"><time datetime="2020-11-27T16:00:00">4:00pm</time>: MAD9013</p>
-              </td>
-              <td>
-                <time datetime="2020-11-28">28</time>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <time datetime="2020-11-29">29</time>
-              </td>
-              <td>
-                <time datetime="2020-11-30">30</time>
-                <p class="cal-item class"><time datetime="2020-11-30T17:00:00">5:00pm</time>: MAD9013</p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-
-        <!-- ---------- END TUTORIAL CONTENT ---------- -->
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Styling | W9 - Tables &amp; Forms</title>
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/table-styling.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="masthead no-print" role="banner">
+      <div class="container">
+        <a href="/" class="logo">
+          <strong>W9 - Tables &amp; Forms</strong>
+        </a>
+        <nav id="nav" role="navigation">
+          <ul>
+            <li><a href="./table-basics.html">Table Basics</a></li>
+            <li>
+              <a aria-current="page" href="./table-styling.html"
+                >Table Styling</a
+              >
+            </li>
+            <li><a href="./form-basics.html">Form Basics</a></li>
+            <li><a href="./form-styling-complete.html">Form Complete</a></li>
+          </ul>
+        </nav>
+        <a class="nav-toggle" href="#nav" aria-label="Click to open mobile nav">
+          <span class="tog top"></span>
+          <span class="tog middle"></span>
+          <span class="tog bottom"></span>
+        </a>
       </div>
+    </header>
 
-    </section>
-  </main>
-  <footer class="footer" role="contentinfo">
-    <div class="container">
-      <p><a href="https://mad9013.github.io/F2020/modules/week9/" target="_blank">Week 9 Content</a></p>
-      <small>Created for <a href="https://mad9013.github.io/F2020/">MAD9013 course</a> and free for any use.</small>
-    </div>
-  </footer>
-  <div class="click-to-close"></div>
-  <script src="./js/main.js"></script>
-</body>
+    <main id="main" role="main">
+      <section>
+        <div class="container container-side-padding">
+          <h1>Table Styling</h1>
+
+          <!-- ---------- TUTORIAL CONTENT ---------- -->
+
+          <h2 class="padding-t">Calendar</h2>
+          <table class="calendar">
+            <caption>
+              November
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Sunday</th>
+                <th scope="col">Monday</th>
+                <th scope="col">Tuesday</th>
+                <th scope="col">Wednesday</th>
+                <th scope="col">Thursday</th>
+                <th scope="col">Friday</th>
+                <th scope="col">Saturday</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <time datetime="2020-11-01">1</time>
+                  <p class="cal-item event icon">Daylight Savings</p>
+                </td>
+                <td>
+                  <time datetime="2020-11-02">2</time>
+                  <p class="cal-item class">
+                    <time datetime="2020-11-02T17:00:00">5:00pm</time>: MAD9013
+                  </p>
+                </td>
+                <td>
+                  <time datetime="2020-11-03">3</time>
+                  <p class="cal-item event">US Election</p>
+                </td>
+                <td>
+                  <time datetime="2020-11-04">4</time>
+                  <p class="cal-item class">
+                    <time datetime="2020-11-04T08:00:00">8:00am</time>: MAD9011
+                  </p>
+                </td>
+                <td>
+                  <time datetime="2020-11-05">5</time>
+                  <p class="cal-item appointment">
+                    <time datetime="2020-11-05T08:00:00">8:00am</time>: Doctor's
+                    appointment
+                  </p>
+                </td>
+                <td>
+                  <time datetime="2020-11-06">6</time>
+                  <p class="cal-item class">
+                    <time datetime="2020-11-06T16:00:00">4:00pm</time>: MAD9013
+                  </p>
+                </td>
+                <td>
+                  <time datetime="2020-11-07">7</time>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <time datetime="2020-11-08">8</time>
+                </td>
+                <td>
+                  <time datetime="2020-11-09">9</time>
+                  <p class="cal-item class">
+                    <time datetime="2020-11-09T17:00:00">5:00pm</time>: MAD9013
+                  </p>
+                </td>
+                <td>
+                  <time datetime="2020-11-10">10</time>
+                </td>
+                <td>
+                  <time datetime="2020-11-11">11</time>
+                  <p class="cal-item holiday">Remembrance Day</p>
+                  <p class="cal-item class">
+                    <time datetime="2020-11-11T08:00:00">8:00am</time>: MAD9011
+                  </p>
+                </td>
+                <td>
+                  <time datetime="2020-11-12">12</time>
+                </td>
+                <td>
+                  <time datetime="2020-11-13">13</time>
+                  <p class="cal-item class">
+                    <time datetime="2020-11-13T16:00:00">4:00pm</time>: MAD9013
+                  </p>
+                </td>
+                <td>
+                  <time datetime="2020-11-14">14</time>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <time datetime="2020-11-15">15</time>
+                </td>
+                <td>
+                  <time datetime="2020-11-16">16</time>
+                  <p class="cal-item class">
+                    <time datetime="2020-11-16T17:00:00">5:00pm</time>: MAD9013
+                  </p>
+                </td>
+                <td>
+                  <time datetime="2020-11-17">17</time>
+                  <p class="cal-item event">Jesse's Birthday</p>
+                </td>
+                <td>
+                  <time datetime="2020-11-18">18</time>
+                  <p class="cal-item class">
+                    <time datetime="2020-11-18T08:00:00">8:00am</time>: MAD9011
+                  </p>
+                </td>
+                <td>
+                  <time datetime="2020-11-19">19</time>
+                </td>
+                <td>
+                  <time datetime="2020-11-20">20</time>
+                  <p class="cal-item class">
+                    <time datetime="2020-11-20T16:00:00">4:00pm</time>: MAD9013
+                  </p>
+                </td>
+                <td>
+                  <time datetime="2020-11-21">21</time>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <time datetime="2020-11-22">22</time>
+                </td>
+                <td>
+                  <time datetime="2020-11-23">23</time>
+                  <p class="cal-item class">
+                    <time datetime="2020-11-23T17:00:00">5:00pm</time>: MAD9013
+                  </p>
+                </td>
+                <td>
+                  <time datetime="2020-11-24">24</time>
+                </td>
+                <td>
+                  <time datetime="2020-11-25">25</time>
+                  <p class="cal-item class">
+                    <time datetime="2020-11-25T08:00:00">8:00am</time>: MAD9011
+                  </p>
+                </td>
+                <td>
+                  <time datetime="2020-11-26">26</time>
+                </td>
+                <td>
+                  <time datetime="2020-11-27">27</time>
+                  <p class="cal-item class">
+                    <time datetime="2020-11-27T16:00:00">4:00pm</time>: MAD9013
+                  </p>
+                </td>
+                <td>
+                  <time datetime="2020-11-28">28</time>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <time datetime="2020-11-29">29</time>
+                </td>
+                <td>
+                  <time datetime="2020-11-30">30</time>
+                  <p class="cal-item class">
+                    <time datetime="2020-11-30T17:00:00">5:00pm</time>: MAD9013
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- ---------- END TUTORIAL CONTENT ---------- -->
+        </div>
+      </section>
+    </main>
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <p>
+          <a
+            href="https://mad9013.github.io/F2021/modules/week9/"
+            target="_blank"
+            >Week 9 Content</a
+          >
+        </p>
+        <small
+          >Created for
+          <a href="https://mad9013.github.io/F2021/">MAD9013 course</a> and free
+          for any use.</small
+        >
+      </div>
+    </footer>
+    <div class="click-to-close"></div>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
