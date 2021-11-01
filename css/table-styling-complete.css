@@ -129,6 +129,11 @@ table {
   border-color: #00462a;
 }
 
+.calendar .cal-item.class.sec-2 {
+  background-color: #6300c7;
+  border-color: #4e009b;
+}
+
 .calendar .cal-item.event {
   background-color: #004067;
   border-color: #00273f;
@@ -179,7 +184,7 @@ table {
 
   .calendar tbody td > time::before {
     content: '';
-    display: none;;
+    display: none;
   }
 
 }
